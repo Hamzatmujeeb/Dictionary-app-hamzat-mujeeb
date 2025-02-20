@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+     <!-- Include FontAwesome in your HTML head -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="assets/images/fastdic-svgrepo-com.svg" alt="Dictionary Logo" class="logo logo-tablet">
+        <div class="controls">
+            <select id="fontSelector">
+                <option value="serif">Sans-Serif</option>
+                <option value="sans-serif">Serif</option>
+                <option value="monospace">Monospace</option>
+            </select>
+            <div class="theme-toggle-wrapper">
+                <label class="theme-toggle">
+                    <input type="checkbox" id="toggleTheme">
+                    <span class="slider"></span>
+                </label>
+                <i class="fas fa-moon moon-icon"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Keyboard">
+            <button id="searchButton">
+                <img src="assets/images//search-svgrepo-com (1).svg" alt="Search">
+            </button>
+        </div>
+        
+        <!-- Word Details -->
+        <div class="word-details">
+            <!-- Word and Play Button -->
+            <h2 class="word">
+                keyboard
+                <button class="play-button">
+                    <i class="fas fa-play"></i>
+                </button> 
+            </h2>            
+            <p class="phonetic">/kiˈbɔːrd/</p>
+
+            <!-- Meanings and Definitions -->
+            <div class="meanings">
+                <div class="flex-heading">
+                    <h3>noun</h3>
+                    <hr class="horizontal-rule">
+                </div>
+                <ul>
+                    <li>A set of keys used to operate a typewriter, computer, etc.</li>
+                    <li>A component of many instruments, including the piano, organ, and harpsichord,<br> consisting of usually black and white keys that cause different tones to be<br> produced when struck.</li>
+                    <li>A device with keys of a musical keyboard used to control electronic sound-producing<br> devices, which may be built into or separate from the keyboard device.</li>
+                </ul>
+
+                <div class="synonyms-container">
+                    <h4>Synonyms:</h4>
+                    <a href="#">electronic keyboard</a>
+                </div>
+                
+
+                <div class="flex-heading">
+                    <h3>verb</h3>
+                    <hr class="horizontal-rule">
+                </div>
+                <ul>
+                    <li>To type on a computer keyboard.</li>
+                    <p>"Keyboarding is the part of the job I hate the most."</p>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Source: <a href="https://en.wiktionary.org/wiki/keyboard" target="_blank">https://en.wiktionary.org/wiki/keyboard</a></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
